@@ -24,7 +24,7 @@
   "homepage": "https://github.com/pritamworld/W2023_COMP2156#readme",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "react": "^18.2.",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "travis": "^0.1.1",
