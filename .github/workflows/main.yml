@@ -6,9 +6,7 @@ name: CI for COMP 2156 Lab Exercises
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ "test" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -44,3 +42,10 @@ jobs:
       # Install project dependencies
       - name: Install dependencies
         run: npm install
+        
+      # Deploy to GitHub pages
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
